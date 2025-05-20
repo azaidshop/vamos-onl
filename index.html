@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vamos Online – Sitios web para negocios locales</title>
+    <style>
+      /* ------------------------------- Reset ------------------------------- */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        color: #222;
+        line-height: 1.6;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* ------------------------------ Layout ------------------------------ */
+      header {
+        background: #f5f7fa;
+        padding: 4rem 1.5rem;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      header p {
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+      }
+
+      .btn {
+        display: inline-block;
+        background: #0070f3;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        font-weight: 600;
+        transition: background 0.2s ease;
+      }
+
+      .btn:hover {
+        background: #0059c7;
+      }
+
+      section {
+        padding: 4rem 1.5rem;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      section h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+      }
+
+      /* ----------------------------- Servicios ---------------------------- */
+      .services {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .service-item {
+        background: #ffffff;
+        border: 1px solid #e1e5ea;
+        border-radius: 8px;
+        padding: 1.5rem;
+        text-align: center;
+      }
+
+      /* ----------------------------- Beneficios --------------------------- */
+      .benefits ul {
+        list-style: disc inside;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      /* ------------------------------ Portafolio -------------------------- */
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .portfolio-item {
+        background: #e1e5ea;
+        height: 160px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #555;
+        font-weight: 500;
+      }
+
+      /* ------------------------------- Pricing ---------------------------- */
+      .pricing-grid {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .price-card {
+        background: #ffffff;
+        border: 1px solid #e1e5ea;
+        border-radius: 8px;
+        padding: 1.5rem;
+        text-align: center;
+      }
+
+      .price-card h3 {
+        margin-bottom: 0.5rem;
+        font-size: 1.25rem;
+      }
+
+      .price {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin: 0.5rem 0 1rem;
+        color: #0070f3;
+      }
+
+      /* ------------------------------ Contacto ---------------------------- */
+      .contact {
+        text-align: center;
+      }
+
+      .contact form {
+        max-width: 600px;
+        margin: 0.5rem auto;
+        display: grid;
+        gap: 1rem;
+      }
+
+      .contact input,
+      .contact textarea {
+        padding: 0.75rem;
+        border: 1px solid #ccd1d8;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+
+      .contact button {
+        cursor: pointer;
+      }
+
+      /* ------------------------------ Footer ------------------------------ */
+      footer {
+        text-align: center;
+        padding: 2rem 1.5rem;
+        background: #f5f7fa;
+        font-size: 0.875rem;
+      }
+
+      /* ----------------------------- Responsive --------------------------- */
+      @media (min-width: 640px) {
+        .services {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .pricing-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (min-width: 900px) {
+        .services {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ----------------------------- Hero ------------------------------ -->
+    <header>
+      <h1>Lleva tu negocio al mundo digital</h1>
+      <p>Sitios web simples, modernos y funcionales para negocios locales.</p>
+      <a href="#contacto" class="btn">Cotiza ahora</a>
+    </header>
+
+    <!-- ------------------------- Servicios --------------------------- -->
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <div class="services">
+        <div class="service-item">Diseño de página informativa</div>
+        <div class="service-item">Integración WhatsApp y formularios</div>
+        <div class="service-item">Agendamiento de citas (Calendly)</div>
+        <div class="service-item">Mapa y redes sociales</div>
+        <div class="service-item">Optimización móvil y SEO básico</div>
+        <div class="service-item">Soporte y mantenimiento</div>
+      </div>
+    </section>
+
+    <!-- ------------------------- Beneficios -------------------------- -->
+    <section id="beneficios" class="benefits">
+      <h2>¿Por qué elegirnos?</h2>
+      <ul>
+        <li>Entregas rápidas: sitio publicado en 3–5 días</li>
+        <li>100% responsive, se ve perfecto en móviles</li>
+        <li>Integración directa a WhatsApp y Google Maps</li>
+        <li>Acompañamiento post-entrega para ajustes</li>
+      </ul>
+    </section>
+
+    <!-- ------------------------- Portafolio -------------------------- -->
+    <section id="portafolio">
+      <h2>Portafolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">Barbería Demo</div>
+        <div class="portfolio-item">Cafetería Demo</div>
+        <div class="portfolio-item">Consultorio Demo</div>
+      </div>
+    </section>
+
+    <!-- --------------------------- Pricing --------------------------- -->
+    <section id="precios">
+      <h2>Planes</h2>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Esencial</h3>
+          <div class="price">$2,500 MXN</div>
+          <p>1 página, contacto y responsive</p>
+        </div>
+        <div class="price-card">
+          <h3>Presencia Pro</h3>
+          <div class="price">$4,500 MXN</div>
+          <p>3-4 páginas, formulario y mapa</p>
+        </div>
+        <div class="price-card">
+          <h3>Conecta Clientes</h3>
+          <div class="price">$7,000 MXN</div>
+          <p>Todo lo anterior + citas y WhatsApp</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------- Contacto --------------------------- -->
+    <section id="contacto" class="contact">
+      <h2>Contáctanos</h2>
+      <p>¿Listo para tu sitio? Escríbenos:</p>
+      <a class="btn" href="https://wa.me/5215512345678" target="_blank">WhatsApp Directo</a>
+      <form action="mailto:contacto@vamosonline.com" method="post" enctype="text/plain">
+        <input type="text" name="Nombre" placeholder="Nombre" required />
+        <input type="email" name="Email" placeholder="Email" required />
+        <textarea name="Mensaje" placeholder="Cuéntanos sobre tu negocio" rows="4"></textarea>
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- --------------------------- Footer ---------------------------- -->
+    <footer>
+      © 2025 Vamos Online – Todos los derechos reservados
+    </footer>
+  </body>
+</html>
